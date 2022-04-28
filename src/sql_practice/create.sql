@@ -1,0 +1,43 @@
+select 
+
+    idPlayer,
+    count(idLobbyGame) as qtLobby, 
+    avg(qtKill) as avgqtKill, 
+    avg(qtAssist) as avgqtAssist, 
+    avg(qtDeath) as avgqtDeath, 
+    avg(qtHs) as avgqtHs, 
+    avg(qtBombeDefuse) as avgqtBombeDefuse, 
+    avg(qtBombePlant) as avgqtBombePlant, 
+    avg(qtTk) as avgqtTk, 
+    avg(qtTkAssist) as avgqtTkAssist, 
+    avg(qt1Kill) as avgqt1Kill, 
+    avg(qt2Kill) as avgqt2Kill, 
+    avg(qt3Kill) as avgqt3Kill, 
+    avg(qt4Kill) as avgqt4Kill, 
+    avg(qt5Kill) as avgqt5Kill, 
+    avg(qtPlusKill) as avgqtPlusKill, 
+    avg(qtFirstKill) as avgqtFirstKill, 
+    avg(vlDamage) as avgvlDamage, 
+    avg(qtHits) as avgqtHits, 
+    avg(qtShots) as avgqtShots, 
+    avg(qtLastAlive) as avgqtLastAlive, 
+    avg(qtClutchWon) as avgqtClutchWon, 
+    avg(qtRoundsPlayed) as avgqtRoundsPlayed, 
+    avg(descMapName) as avgdescMapName, 
+    avg(vlLevel) as avgvlLevel, 
+    avg(qtSurvived) as avgqtSurvived, 
+    avg(qtTrade) as avgqtTrade, 
+    avg(qtFlashAssist) as avgqtFlashAssist, 
+    avg(qtHitHeadshot) as avgqtHitHeadshot, 
+    avg(qtHitChest) as avgqtHitChest, 
+    avg(qtHitStomach) as avgqtHitStomach, 
+    avg(qtHitLeftAtm) as avgqtHitLeftAtm, 
+    avg(qtHitRightArm) as avgqtHitRightArm, 
+    avg(qtHitLeftLeg) as avgqtHitLeftLeg, 
+    avg(qtHitRightLeg) as avgqtHitRightLeg, 
+    avg(flWinner) as avgflWinner, 
+    avg(dtCreatedAt) as avgdtCreatedAt
+
+from tb_lobby_stats_player
+
+group by idPlayer
