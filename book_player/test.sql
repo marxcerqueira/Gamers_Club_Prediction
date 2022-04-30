@@ -3,5 +3,5 @@ SELECT
     *
 
 from tb_book_players
-order by idPlayer, dtReff
-
+where idPlayer = 3
+order by dtReff
