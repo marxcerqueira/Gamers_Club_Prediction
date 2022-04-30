@@ -5,7 +5,7 @@ tb_lobby as (
     select 
         * 
     from tb_lobby_stats_player
-    where dtCreatedAt < '{date}'
+    where dtCreatedAt < '{date}' --place holder
     and dtCreatedAt > date('{date}', '-30 day' ) --get 30 days back 
 
 ),
