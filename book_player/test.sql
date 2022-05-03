@@ -1,7 +1,9 @@
 SELECT
-
-    *
-
+    distinct dtReff
 from tb_book_players
-where idPlayer = 3
 order by dtReff
+
+
+
+/*  SELECT * FROM sqlite_master WHERE type='table';
+ */
