@@ -1,9 +1,7 @@
-SELECT
-    distinct dtReff
+/* SELECT
+    *
 from tb_book_players
-order by dtReff
+limit 100; */
 
 
-
-/*  SELECT * FROM sqlite_master WHERE type='table';
- */
+ SELECT * FROM sqlite_master WHERE type='table';
