@@ -69,7 +69,7 @@ missing_1 = ["vlIdade",
 
 
 # %%
-print("\n    Missing numerico")
+print("\n    Missing categórico")
 is_na = X_train[cat_features].isna().sum()
 print(is_na[is_na>0])
 
